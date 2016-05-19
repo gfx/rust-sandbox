@@ -1,0 +1,7 @@
+[package]
+name = "sandbox"
+version = "0.1.0"
+authors = ["FUJI Goro (gfx) <gfuji@cpan.org>"]
+
+[dependencies]
+getopts = "~0.2"
