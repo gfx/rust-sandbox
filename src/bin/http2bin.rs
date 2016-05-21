@@ -9,11 +9,11 @@ fn create_client() -> hyper::Client {
 
 fn main() {
     let url = "https://http2bin.org/get";
-    let ua = "rust-sandbox/1.0".to_string();
+    let ua = "rust-sandbox/1.0";
 
     let client = create_client();
     let request_builder = client.get(url)
-        .header(hyper::header::UserAgent(ua));
+        .header(hyper::header::UserAgent(ua.to_string()));
     let mut res = request_builder.send().unwrap();
 
     println!("Response: {}", res.status);
