@@ -6,3 +6,4 @@ authors = ["FUJI Goro (gfx) <gfuji@cpan.org>"]
 [dependencies]
 getopts = "~0.2"
 hyper = "~0.9.5"
+threadpool = "~1.0"
